@@ -1,0 +1,18 @@
+packages: .
+
+-- Build options
+with-compiler: ghc-9.8.4
+
+package *
+    compiler: ghc
+    ghc-options: -Wall
+
+allow-newer: witherable:containers,
+             semialign:containers,
+             scientific:containers,
+             parallel:containers,
+             megaparsec:containers,
+             foldl:containers,
+             linear-generics:containers,
+             indexed-traversable:containers,
+             hashable:containers
